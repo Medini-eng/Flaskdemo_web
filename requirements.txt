@@ -63,7 +63,6 @@ pyserial==3.5
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
-pywin32==309
 PyYAML==6.0.2
 pyzmq==26.2.1
 reedsolo==1.7.0
