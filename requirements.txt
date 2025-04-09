@@ -93,3 +93,4 @@ wsproto==1.2.0
 Flask
 azure-storage-blob
 gunicorn
+pywin32==309 ; sys_platform == 'win32'
