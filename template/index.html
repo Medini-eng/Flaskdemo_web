@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Blob Image Manager</title>
+</head>
+<body>
+    <h2>Azure Blob Storage - Upload & Download</h2>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h3>Available Images:</h3>
+    {% for blob in blobs %}
+        <div style="margin: 10px 0;">
+            <img src="{{ blob.url }}" alt="{{ blob.name }}" width="150"><br>
+            <span>{{ blob.name }}</span><br>
+            <a href="{{ url_for('download', blob_name=blob.name) }}">
+                <button>Download</button>
+            </a>
+        </div>
+    {% endfor %}
+</body>
+</html>
 
