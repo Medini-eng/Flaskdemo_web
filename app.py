@@ -38,6 +38,6 @@ def download(blob_name):
     stream.seek(0)
     return send_file(stream, download_name=blob_name, as_attachment=True)
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
 #     app.run(debug=True)
-app = app
+      app = app
